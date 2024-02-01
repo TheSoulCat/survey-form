@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Music Lesson Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our platform</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label for="name-label" id="name-label">Name <input id="name" type="text" class="space" placeholder="Enter your name" required /></label>
+        <label for="email-label" id="email-label">Email <input id="email" type="email" class="space" placeholder="Enter your email" required /></label>
+        <label for="number-label" id="number-label">Age &#40;optional&#41; <input id="number" type="number" class="space" min="10" max="100" placeholder="Age" /></label>
+        <label for="dropdown" class="space">What instrument do you play? 
+          <select id="dropdown" name="dropdown" class="space">
+            <option value="">Select an instrument</option>
+            <option value="1">Guitar</option>
+            <option value="2">Bass</option>
+            <option value="3">Keyboard</option>
+            <option value="4">Synthesizer</option>
+            <option value="5">Drums</option>
+            <option value="6">Saxophone</option>
+            <optiom value="7">Harmonica</option>
+          </select>
+        </label>
+        <label class="space">Would you recommend our music lessons to a friend?</label>
+        <label for="definitely"><input id="definitely" type="radio" value="definitely" name="recommend-option" class="inline" /> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" value="maybe" name="recommend-option" class="inline" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" value="not-sure" name="recommend-option" class="inline" /> Not sure</label>
+        <label for="skills" class="space">In which skill do you feel the most comfortable?
+          <select id="skills" name="skills" class="space">
+            <option value="">Select a skill</option>
+            <option value="1">Chords</option>
+            <option value="2">Scales</option>
+            <option value="3">Modes</option>
+            <option value="4">Appeggios</option>
+            <option value="5">Music Theory</option>
+          </select>
+        </label>
+        <label for="improvement" class="space">In which skills do you feel you need the most improvement? &#40;Select all the apply&#41;</label>
+        <label><input id="chords" type="checkbox" name="chords" value="chords" class="inline" />Chords</label>
+        <label><input id="scales" type="checkbox" name="scales" value="scales" class="inline" />Scales</label>
+        <label><input id="modes" type="checkbox" name="modes" value="modes" class="inline" />Modes</label>
+        <label><input id="appreggios" type="checkbox" name="appreggios" value="appreggios" class="inline" />Appreggios</label>
+        <label><input id="music-theory" type="checkbox" name="music-theory" value="music-theory" class="inline" />Music Theory</label>
+        <label for="comments" class="space">Any comments or suggestions?
+          <textarea id="comments" name="comments" class="space" rows="10" cols="100" placeholder="Enter your comments here..."></textarea>
+       </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
